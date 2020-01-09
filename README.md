@@ -2,18 +2,17 @@
 GIFを"issue"に投稿
 ## What
 1. 画像プレビュー要素のサイズを動的に変更
-    1. flex
-        1. image数が"5"の時にimages2を出現
-        1. image数が"4"の時にimages2を消失
-        1. image数が"5以上"の時にimages2にプレビュー表示
+    1. flexboxを使用して動的にimageとinputを変化
+        1. flex-wrapで"images"が"500px(image５枚)"の時に折り返し
+        1. flex-growでfile_fieldを動的に伸縮
 
 ## Why
 * メルカリ画像投稿機能の細分化
 
 ## gem list
 * pry-rails
-* jquery-rail https://github.com/rails/jquery-rails
-* haml-rails https://github.com/haml/haml-rails
+* [jquery-rail](https://github.com/rails/jquery-rails)
+* [haml-rails](https://github.com/haml/haml-rails)
 * carrierwave
 
 ## 構築手順
