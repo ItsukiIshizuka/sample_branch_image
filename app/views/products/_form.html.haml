@@ -12,7 +12,10 @@
     = f.text_field :name
   .images
     = f.fields_for :images do |image|
-      - unless image.object.image.blank?
+      - if image.object.image.blank?
+        .new_input
+          = image.file_field :image, class: :user_img
+      - elsif image.index <= 4
         .image
           = image_tag image.object.image.to_s, id: :img_prev, height:'100', width: '100'
           .input
@@ -20,7 +23,11 @@
             = image.hidden_field :_destroy, value: ""
             %button.delete{type: :button}
       - else
-        .new_input
-          = image.file_field :image, class: :user_img
+        .image2
+          = image_tag image.object.image.to_s, id: :img_prev, height:'100', width: '100'
+          .input2
+            = image.hidden_field :id, value: image.object.id
+            = image.hidden_field :_destroy, value: ""
+            %button.delete{type: :button}
   .action
     = f.submit

@@ -1,13 +1,12 @@
 # README
 GIFを"issue"に投稿
 ## What
-1. 画像の複数枚削除
-    1. プレビュー時に削除ボタン追加
-    1. 削除ボタン押下時にプレビュー削除(見た目の削除)
-    1. 上記と同時に、"_destroy"に value = 1 を付与(データの削除予約)
-1. 不要な記述削除
-    1. "controller"からparamsを1つにした
-    1. paramsから":image_cache"を削除
+1. 画像プレビュー要素のサイズを動的に変更
+    1. flex
+        1. image数が"5"の時にimages2を出現
+        1. image数が"4"の時にimages2を消失
+        1. image数が"5以上"の時にimages2にプレビュー表示
+
 ## Why
 * メルカリ画像投稿機能の細分化
 
@@ -33,3 +32,6 @@ mount_uploader :image, ImagesUploader
 ```
 
 ## 参考記事
+* [jqueryで要素を入れえる](https://www.aiship.jp/knowhow/archives/27837)
+* [flexチートシート](https://www.webcreatorbox.com/tech/css-flexbox-cheat-sheet)
+* [flex-grow](https://developer.mozilla.org/ja/docs/Web/CSS/flex-grow)

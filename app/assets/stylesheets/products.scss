@@ -1,0 +1,9 @@
+.images{
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 500px;
+  .new_input{
+    width: calc(100% / 5);
+    flex-grow: 1;
+  }
+}
