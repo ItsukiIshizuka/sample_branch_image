@@ -1,5 +1,6 @@
 # README
-動作確認GIFを"[issue](https://github.com/ItsukiIshizuka/sample_branch_image/issues/1)"に投稿
+![operation](https://user-images.githubusercontent.com/56192097/72032785-c999a780-32d3-11ea-81f5-607100aaa5ef.gif)
+
 ## What
 1. 画像プレビュー要素のサイズを動的に変更
     1. flexboxを使用して動的にimageとinputを変化
